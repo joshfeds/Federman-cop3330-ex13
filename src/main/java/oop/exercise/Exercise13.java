@@ -42,7 +42,7 @@ public class Exercise13
         Locale convert = new Locale("en", "US");
         NumberFormat printDollar = NumberFormat.getCurrencyInstance(convert);
         System.out.print(p + " invested at " + r +"% for " + t + " years compounded "
-               + n + " times per year is " + printDollar.format(compIntr));
+                            + n + " times per year is " + printDollar.format(compIntr));
     }
     public static void main( String[] args ) {
         String principal = getPrin();
