@@ -38,11 +38,11 @@ public class Exercise13
         float years = Float.parseFloat(t);
         float compound = Float.parseFloat(n);
         double compIntr = principal * Math.pow(1 + roi/compound, compound * years);
-        //$1500 invested at 4.3% for 6 years compounded 4 times per year is $1938.84.
+
         Locale convert = new Locale("en", "US");
         NumberFormat printDollar = NumberFormat.getCurrencyInstance(convert);
         System.out.print(p + " invested at " + r +"% for " + t + " years compounded "
-                            + n + " times per year is " + printDollar.format(compIntr));
+                            + n + " times per year is " + printDollar.format(compIntr) + ".");
     }
     public static void main( String[] args ) {
         String principal = getPrin();
